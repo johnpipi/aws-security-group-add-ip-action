@@ -33,6 +33,9 @@ inputs:
     description: 'The descriptipn of your IP permission'
     required: false
     default: 'GitHub Action'
+outputs:
+  ip-address:
+    description: 'Public IP address added to aws security group'
 runs:
   using: 'node12'
   main: 'dist/main/index.js'

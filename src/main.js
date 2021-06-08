@@ -50,6 +50,7 @@ async function run() {
         }] 
       }).promise();
 
+      core.setOutput('ip-address', myPublicIp);
       console.log(`The IP ${myPublicIp} is added`);
     }
 
